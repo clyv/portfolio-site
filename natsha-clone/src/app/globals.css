@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*==================== FONTS ====================*/
+@font-face {
+  font-family: 'Avantgarde';
+  src: url('/fonts/avantgarde.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*==================== BASE COLORS ====================*/
+@layer base {
+  :root {
+    --background: #f6f6f6;
+    --foreground: #312f2f;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --primary: #312f2f;
+    --primary-foreground: #f6f6f6;
+
+    --secondary: #9aadbe;
+    --accent: #b5b765;
+
+    --muted: 210 40% 96.1%;
+    --border: 214.3 31.8% 91.4%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: #312f2f;
+    --foreground: #f6f6f6;
+
+    --card: 222.2 84% 4.9%;
+    --primary: #f6f6f6;
+
+    --secondary: #9aadbe;
+    --accent: #b5b765;
+
+    --muted: 217.2 32.6% 17.5%;
+    --border: 217.2 32.6% 17.5%;
+  }
+}
+
+/*==================== TYPOGRAPHY ====================*/
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    cursor: none; /* Optional custom cursor */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avantgarde', sans-serif;
+  }
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/*==================== SCROLLBAR ====================*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/*==================== ANIMATIONS ====================*/
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/*==================== CUSTOM CURSOR ====================*/
+.custom-cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  background-color: var(--accent);
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease;
+}
