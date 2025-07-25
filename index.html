@@ -52,6 +52,11 @@
                             </a>
                         </li>
                         <li class="nav__itemm">
+                            <a href="#contact" class="nav__link">
+                                <i class="ri-mail-line"></i> Contact
+                            </a>
+                        </li>
+                        <li class="nav__itemm">
                             <a href="assets/Resume.pdf" class="nav__link" download="Clivin_Resume" target="_blank">
                                 <i class="ri-file-download-line"></i> Resume
                             </a>
@@ -95,12 +100,27 @@
 
                         <!-- TEXT on the right -->
                         <div class="home__text-block">
-                            <h1 class="home__title">Hello, I'm Clivin John</h1>
+                            <h1 class="home__title">Clivin John</h1>
+                            <h2 class="home__subtitle">Data Scientist & AI Enthusiast</h2>
                             <div class="home__info">
                                 <h3 class="home__info-title">ABOUT ME</h3>
                                 <p class="home__info-description">
-                                I have a Master's degree in Data Science from the University of Texas at Arlington and work as a Data Scientist. My main areas of interest include machine learning, data analytics, and artificial intelligence. I am passionate about uncovering insights from data, building predictive models, and developing data-driven solutions that address real-world challenges.
+                                I'm a passionate Data Scientist with an M.S. from UT Arlington, specializing in machine learning and AI solutions. I transform complex data into actionable insights and build predictive models that solve real-world problems. From healthcare analytics to computer vision, I love turning data challenges into innovative solutions.
                                 </p>
+                                <div class="home__stats">
+                                    <div class="stat">
+                                        <span class="stat__number">5+</span>
+                                        <span class="stat__label">Projects</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat__number">2+</span>
+                                        <span class="stat__label">Years Experience</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat__number">10+</span>
+                                        <span class="stat__label">Technologies</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -327,9 +347,14 @@
                                     <h1 class="projects__title">
                                         VirQueue
                                     </h1>
-                                    <a href="https://github.com/clyv/VirQueue" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                    <p class="projects__description">
+                                        Virtual queue management system for efficient crowd control and waiting time optimization
+                                    </p>
+                                    <div class="projects__links">
+                                        <a href="https://github.com/clyv/VirQueue" class="projects__button">
+                                            GitHub <i class="ri-arrow-right-line"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <!--==================== PROJECT 2 ====================-->
@@ -382,14 +407,19 @@
                                 <img src="assets/img/project2.jpg" alt="projects image" class="projects__img">
                                 <div>
                                     <span class="projects__subtitle">
-                                        Python, Machine Learning
+                                        Python, Deep Learning, GCN
                                     </span>
                                     <h1 class="projects__title">
                                         Image Recognition using GCN
                                     </h1>
-                                    <a href="https://github.com/clyv/GCN-Image-Recongition" class="projects__button">
-                                        Github <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                    <p class="projects__description">
+                                        Advanced image classification using Graph Convolutional Networks for improved accuracy and feature extraction
+                                    </p>
+                                    <div class="projects__links">
+                                        <a href="https://github.com/clyv/GCN-Image-Recongition" class="projects__button">
+                                            GitHub <i class="ri-arrow-right-line"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>                            
                         </div>
@@ -410,6 +440,55 @@
             <!-- <section class="testimonial section"></section> -->
 
             <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+                
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-chat-3-line"></i> Let's work together
+                        </h3>
+                        <div class="contact__info">
+                            <div class="contact__data">
+                                <span class="contact__data-title">Email</span>
+                                <span class="contact__data-info">clivin100@gmail.com</span>
+                            </div>
+                            <div class="contact__data">
+                                <span class="contact__data-title">LinkedIn</span>
+                                <span class="contact__data-info">clivin-john</span>
+                            </div>
+                            <div class="contact__data">
+                                <span class="contact__data-title">Location</span>
+                                <span class="contact__data-info">Arlington, TX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-send-plane-line"></i> Send me a message
+                        </h3>
+                        
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <input type="text" name="user_name" class="contact__form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="contact__form-div">
+                                <input type="email" name="user_email" class="contact__form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="contact__form-div contact__form-area">
+                                <textarea name="user_message" class="contact__form-input" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="contact__button">
+                                Send Message <i class="ri-arrow-right-up-line"></i>
+                            </button>
+                        </form>
+                        
+                        <p class="contact__message" id="contact-message"></p>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!--==================== FOOTER ====================-->
