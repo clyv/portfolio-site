@@ -41,7 +41,7 @@ let swiperProjects = new Swiper(".projects__container", {
     breakpoints: {
         1200: {
             slidesPerView: 2,
-            spaceBetween: -56,
+            spaceBetween: 28,
         },
     },
 });
@@ -54,7 +54,7 @@ let swiperProjects = new Swiper(".projects__container", {
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
+  	const scrollY = window.scrollY
 
 	sections.forEach(current =>{
 		const sectionHeight = current.offsetHeight,
@@ -75,8 +75,8 @@ window.addEventListener('scroll', scrollActive)
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-	this.scrollY >= 4250 ? scrollUp.classList.add('show-scroll')
+    if (!scrollUp) return
+    window.scrollY >= 400 ? scrollUp.classList.add('show-scroll')
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
@@ -114,8 +114,8 @@ themeButton.addEventListener('click', () => {
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () =>{
     const header = document.getElementById('header')
-    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    this.scrollY >= 50 ? header.classList.add('bg-header') 
+    if (!header) return
+    window.scrollY >= 50 ? header.classList.add('bg-header') 
                        : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
