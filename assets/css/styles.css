@@ -859,6 +859,8 @@ body.dark-theme {
 
 .projects__img{
   width: 250px;
+  height: 170px;
+  object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 1.25rem;
   box-shadow: 0 8px 24px var(--shadow-color);
@@ -914,12 +916,14 @@ body.dark-theme {
 
 .projects__container .swiper-button-next{
   right: -1rem;
-  top: 4.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .projects__container .swiper-button-prev{
   left: -1rem;
-  top: 4.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .projects__container .swiper-slide{
@@ -1207,6 +1211,8 @@ body.dark-theme {
 
   .projects__img{
     width: 200px;
+    height: 140px;
+    object-fit: cover;
     justify-self: center;
   }
 
@@ -1635,6 +1641,8 @@ body.dark-theme {
 
   .projects__img{
     width: 320px;
+    height: 210px;
+    object-fit: cover;
     margin-bottom: 2rem;
   }
 
