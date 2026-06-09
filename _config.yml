@@ -1,0 +1,4 @@
+# Disable Jekyll theme so the jekyll-theme-primer sass load paths
+# (which reference a non-existent /docs directory) are not applied.
+theme: ~
+plugins: []
