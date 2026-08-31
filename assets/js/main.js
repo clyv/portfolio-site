@@ -50,6 +50,24 @@ let swiperProjects = new Swiper(".projects__container", {
 
 /*=============== EMAIL JS REMOVED ===============*/
 
+/*=============== CERTIFICATES FILTER ===============*/
+const certFilters = document.querySelectorAll('.certificates__filter'),
+      certCards = document.querySelectorAll('.certificates__card')
+
+certFilters.forEach(filter =>{
+    filter.addEventListener('click', () =>{
+        certFilters.forEach(btn => btn.classList.remove('certificates__filter-active'))
+        filter.classList.add('certificates__filter-active')
+
+        const selected = filter.dataset.filter
+
+        certCards.forEach(card =>{
+            const show = selected === 'all' || card.dataset.issuer === selected
+            card.classList.toggle('certificates__card-hidden', !show)
+        })
+    })
+})
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
     
@@ -134,3 +152,4 @@ sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100})
 sr.reveal(`.skills__content:nth-child(1)`, {origin: 'left'})
 sr.reveal(`.skills__content:nth-child(2)`, {origin: 'right'})
 sr.reveal(`.qualification__content`, {interval: 100})
+sr.reveal(`.certificates__filters, .certificates__grid`)
