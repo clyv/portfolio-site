@@ -52,21 +52,66 @@ let swiperProjects = new Swiper(".projects__container", {
 
 /*=============== CERTIFICATES FILTER ===============*/
 const certFilters = document.querySelectorAll('.certificates__filter'),
-      certCards = document.querySelectorAll('.certificates__card')
+      certCards = document.querySelectorAll('.certificates__card'),
+      certMore = document.getElementById('certificates-more'),
+      certGrid = document.getElementById('certificates-grid')
+
+// How many cards to show before the list is collapsed behind "View more"
+const certPageSize = 12
+
+let certSelected = 'all',
+    certExpanded = false
+
+const renderCertificates = () =>{
+    let matched = 0
+
+    certCards.forEach(card =>{
+        // A certificate can teach more than one skill, so cards carry a list
+        const skills = card.dataset.skills.split(' ')
+        const isMatch = certSelected === 'all' || skills.includes(certSelected)
+
+        if(isMatch) matched++
+
+        const isVisible = isMatch && (certExpanded || matched <= certPageSize)
+        card.classList.toggle('certificates__card-hidden', !isVisible)
+    })
+
+    if(!certMore) return
+
+    const hiddenCount = matched - certPageSize
+
+    if(hiddenCount <= 0){
+        certMore.classList.add('certificates__more-hidden')
+    }else{
+        certMore.classList.remove('certificates__more-hidden')
+        certMore.innerHTML = certExpanded
+            ? `Show fewer <i class="ri-arrow-up-s-line"></i>`
+            : `View more (${hiddenCount}) <i class="ri-arrow-down-s-line"></i>`
+    }
+}
 
 certFilters.forEach(filter =>{
     filter.addEventListener('click', () =>{
         certFilters.forEach(btn => btn.classList.remove('certificates__filter-active'))
         filter.classList.add('certificates__filter-active')
 
-        const selected = filter.dataset.filter
-
-        certCards.forEach(card =>{
-            const show = selected === 'all' || card.dataset.issuer === selected
-            card.classList.toggle('certificates__card-hidden', !show)
-        })
+        certSelected = filter.dataset.filter
+        certExpanded = false
+        renderCertificates()
     })
 })
+
+if(certMore){
+    certMore.addEventListener('click', () =>{
+        certExpanded = !certExpanded
+        renderCertificates()
+
+        // Collapsing can leave the viewport below the section, so come back up
+        if(!certExpanded) certGrid.scrollIntoView({behavior: 'smooth', block: 'start'})
+    })
+}
+
+renderCertificates()
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')

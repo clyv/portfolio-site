@@ -7,6 +7,11 @@
         <!--=============== FAVICON ===============-->
         <link rel="icon" href="assets/img/favicon.jpeg" type="image/jpeg">
 
+        <!--=============== CANONICAL ===============-->
+        <!-- The same files are served from GitHub Pages and Vercel; this names
+             the Vercel URL as the one search engines should index. -->
+        <link rel="canonical" href="https://clivin-portfolio.vercel.app/">
+
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <!--=============== FOOTER ICONS ===============-->
@@ -570,28 +575,28 @@
                             <button class="certificates__filter certificates__filter-active" data-filter="all">
                                 All <span class="certificates__count">41</span>
                             </button>
-                            <button class="certificates__filter" data-filter="coursera">
-                                Coursera <span class="certificates__count">13</span>
+                            <button class="certificates__filter" data-filter="analytics">
+                                Data Analytics &amp; BI <span class="certificates__count">18</span>
                             </button>
-                            <button class="certificates__filter" data-filter="forage">
-                                Forage <span class="certificates__count">12</span>
+                            <button class="certificates__filter" data-filter="ml">
+                                Machine Learning &amp; AI <span class="certificates__count">9</span>
                             </button>
-                            <button class="certificates__filter" data-filter="databricks">
-                                Databricks <span class="certificates__count">9</span>
+                            <button class="certificates__filter" data-filter="programming">
+                                Programming &amp; Algorithms <span class="certificates__count">9</span>
                             </button>
-                            <button class="certificates__filter" data-filter="udemy">
-                                Udemy <span class="certificates__count">4</span>
+                            <button class="certificates__filter" data-filter="engineering">
+                                Data Engineering <span class="certificates__count">6</span>
                             </button>
-                            <button class="certificates__filter" data-filter="google">
-                                Google <span class="certificates__count">2</span>
+                            <button class="certificates__filter" data-filter="sql">
+                                SQL &amp; Databases <span class="certificates__count">4</span>
                             </button>
-                            <button class="certificates__filter" data-filter="great-learning">
-                                Great Learning <span class="certificates__count">1</span>
+                            <button class="certificates__filter" data-filter="quant">
+                                Quantitative Analysis <span class="certificates__count">2</span>
                             </button>
                     </div>
                     <div class="certificates__grid" id="certificates-grid">
                             <a href="assets/certificates/coursera-python-for-everybody.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -603,7 +608,7 @@
                                 <span class="certificates__sr">Open Python for Everybody certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-python-data-structures.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -615,7 +620,7 @@
                                 <span class="certificates__sr">Open Python Data Structures certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-python-web-data.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -627,7 +632,7 @@
                                 <span class="certificates__sr">Open Using Python to Access Web Data certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-databases-with-python.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming sql">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -639,7 +644,7 @@
                                 <span class="certificates__sr">Open Using Databases with Python certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-python-capstone.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -651,7 +656,7 @@
                                 <span class="certificates__sr">Open Capstone: Retrieving, Processing &amp; Visualizing Data with Python certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-ml-specialization.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="ml">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -663,7 +668,7 @@
                                 <span class="certificates__sr">Open Machine Learning Specialization certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-ml-foundations.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="ml">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -675,7 +680,7 @@
                                 <span class="certificates__sr">Open ML Foundations: A Case Study Approach certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-ai-for-everyone.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="ml">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -687,7 +692,7 @@
                                 <span class="certificates__sr">Open AI For Everyone certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-google-data-analytics-capstone.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -699,7 +704,7 @@
                                 <span class="certificates__sr">Open Google Data Analytics Capstone: Complete a Case Study certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-data-structures.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -711,7 +716,7 @@
                                 <span class="certificates__sr">Open Data Structures certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-algorithmic-toolbox.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -723,7 +728,7 @@
                                 <span class="certificates__sr">Open Algorithmic Toolbox certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-algorithms-on-graphs.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -735,7 +740,7 @@
                                 <span class="certificates__sr">Open Algorithms on Graphs certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/coursera-html-css-js.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="coursera">
+                               class="certificates__card" data-skills="programming">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -747,7 +752,7 @@
                                 <span class="certificates__sr">Open HTML, CSS &amp; JavaScript for Web Developers certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/databricks-fundamentals.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="engineering">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -759,7 +764,7 @@
                                 <span class="certificates__sr">Open Databricks Fundamentals Accreditation certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-genai-fundamentals.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="ml">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -771,7 +776,7 @@
                                 <span class="certificates__sr">Open Generative AI Fundamentals Accreditation certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-aibi-data-analysts.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -783,7 +788,7 @@
                                 <span class="certificates__sr">Open AI/BI for Data Analysts certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-aibi-self-service-analysts.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -795,7 +800,7 @@
                                 <span class="certificates__sr">Open AI/BI for Self-Service Analysts certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-sql-analytics-intro.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="sql analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -807,7 +812,7 @@
                                 <span class="certificates__sr">Open Introduction to SQL Analytics certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-sql-analytics.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="sql analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -819,7 +824,7 @@
                                 <span class="certificates__sr">Open SQL Analytics certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-lakeflow-pipelines.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="engineering">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -831,7 +836,7 @@
                                 <span class="certificates__sr">Open Lakeflow Declarative Pipelines certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-data-engineering-intro.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="engineering">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -843,7 +848,7 @@
                                 <span class="certificates__sr">Open Introduction to Data Engineering certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/databricks-data-engineering-devops.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="databricks">
+                               class="certificates__card" data-skills="engineering">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -855,7 +860,7 @@
                                 <span class="certificates__sr">Open Data Engineering with DevOps certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/forage-british-airways-data-science.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="ml analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -867,7 +872,7 @@
                                 <span class="certificates__sr">Open British Airways &mdash; Data Science certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-commonwealth-bank-data-science.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -879,7 +884,7 @@
                                 <span class="certificates__sr">Open Commonwealth Bank &mdash; Data Science certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-commonwealth-bank-tech.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="engineering">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -891,7 +896,7 @@
                                 <span class="certificates__sr">Open Commonwealth Bank &mdash; Tech Exploration certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-lloyds-data-science.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="ml analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -903,7 +908,7 @@
                                 <span class="certificates__sr">Open Lloyds Banking Group &mdash; Data Science certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-jpmorgan-quant-research.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="quant ml">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -915,7 +920,7 @@
                                 <span class="certificates__sr">Open J.P. Morgan &mdash; Quantitative Research certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-citi-quant-analysis.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="quant">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -927,7 +932,7 @@
                                 <span class="certificates__sr">Open Citi &mdash; Quantitative Analysis certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-bcg-data-decision-maker.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -939,7 +944,7 @@
                                 <span class="certificates__sr">Open BCG &mdash; Data Decision Maker certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-deloitte-data-analytics.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -951,7 +956,7 @@
                                 <span class="certificates__sr">Open Deloitte &mdash; Data Analytics certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-quantium-data-analytics.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -963,7 +968,7 @@
                                 <span class="certificates__sr">Open Quantium &mdash; Data Analytics certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-tata-data-visualization.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -975,7 +980,7 @@
                                 <span class="certificates__sr">Open Tata &mdash; Data Visualisation certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-vista-ai.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="ml">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -987,7 +992,7 @@
                                 <span class="certificates__sr">Open Vista &mdash; AI certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/forage-data-labelling.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="forage">
+                               class="certificates__card" data-skills="ml">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -999,7 +1004,7 @@
                                 <span class="certificates__sr">Open Data Labelling certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/udemy-sql-bootcamp.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="udemy">
+                               class="certificates__card" data-skills="sql">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -1011,7 +1016,7 @@
                                 <span class="certificates__sr">Open The Complete SQL Bootcamp certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/udemy-power-bi.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="udemy">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -1023,7 +1028,7 @@
                                 <span class="certificates__sr">Open Microsoft Power BI certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/udemy-microstrategy.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="udemy">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -1035,7 +1040,7 @@
                                 <span class="certificates__sr">Open MicroStrategy certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/udemy-boomi.pdf" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="udemy">
+                               class="certificates__card" data-skills="engineering">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -1047,7 +1052,7 @@
                                 <span class="certificates__sr">Open Dell Boomi certificate (PDF)</span>
                             </a>
                             <a href="assets/certificates/google-analytics-beginners.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="google">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -1059,7 +1064,7 @@
                                 <span class="certificates__sr">Open Google Analytics for Beginners certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/google-analytics-advanced.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="google">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -1071,7 +1076,7 @@
                                 <span class="certificates__sr">Open Advanced Google Analytics certificate (Image)</span>
                             </a>
                             <a href="assets/certificates/great-learning-data-visualization.jpg" target="_blank" rel="noopener"
-                               class="certificates__card" data-issuer="great-learning">
+                               class="certificates__card" data-skills="analytics">
                                 <div class="certificates__icon">
                                     <i class="ri-award-line"></i>
                                 </div>
@@ -1083,6 +1088,9 @@
                                 <span class="certificates__sr">Open Data Visualization certificate (Image)</span>
                             </a>
                     </div>
+                    <button class="certificates__more" id="certificates-more" type="button">
+                        View more <i class="ri-arrow-down-s-line"></i>
+                    </button>
                 </div>
             </section>
 
